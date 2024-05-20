@@ -1,4 +1,4 @@
 # pyds_alumni
 this is my personal project
-Live demo :https://lovely-maamoul-35c800.netlify.app/
+Live demo :https://tarun-rawat-007.github.io/pyds_alumni/
 
