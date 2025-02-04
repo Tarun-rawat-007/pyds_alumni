@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -353,4 +354,362 @@ input[type=submit]{
     </section>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyds Alumni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            
+        }
+        .navbar a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 53px;
+            font-size: 1.5rem;
+            
+        }
+     
+        .navbar a:hover{
+            background-color: #04aa6d;
+            border-radius: 23px;
+            text-align: center;
+        }
+        /* sidenav */
+        .sidenav{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1; 
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+
+        }
+        .sidenav a:hover{
+            color: #f1f1f1;
+            background-color: #04aa6d;
+        }
+        .sidenav .closebtn{
+            position: absolute;
+            top: 0;
+            right: 20px;
+            font-size: 36px;
+            margin-left: 45px;
+            border-radius: 50%;           
+          
+        }
+        @media screen and(max-height:450px){
+            .sidenav{padding-top: 15px;}
+            .sidenav a{font: size 18px;}
+        }
+        /* main body */
+        .main{
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            width: 100%;
+        }
+        .left{
+            flex: 60%;
+            background-color: rgb(255, 255, 255);
+            padding: 20px ;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+      
+        h1{
+            font-size: 4rem;
+           
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 1%;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        
+        .right{
+            flex: 40%;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        button{
+            background-color: #08b374;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 2%;
+            font-size: 24px;
+            outline: none;
+            box-shadow: 1px 8px  #999;
+        }
+        button:hover{
+            opacity: 0.7;
+        }
+        button:active{
+            background-color: #04aa6d;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+            
+        }
+        /* form */
+        .form{
+         border-radius: 5px;
+        background-color: #f2f2f2;
+         padding: 20px;
+         width: 70%;
+         border: 2px solid #8d9692;
+         margin: auto;
+        margin-top: 2%;
+        font-size: larger;
+        font-weight: bold;
+        margin-bottom: 10%;
+   
+}
+input,select,textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]{
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: x-large;
+
+}
+#btn:hover{
+    background-color: #024229;
+
+}
+/* about pyds */
+.container{
+            position: relative;
+           width: 100%;
+            margin: 10px auto;
+            z-index: -1;
+
+        }
+        .container .content{
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0,0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 100px;
+            max-height: 500px;
+            overflow: hidden;
+            
+
+
+        }
+/* footer */
+.footer{
+            padding: 40px 0;
+            background-color: #333;
+            color: white;
+        }
+        .footer .social{
+            text-align: center;
+            padding-bottom: 25px;
+            color: hsl(0, 0%, 100%);       
+        }
+        .footer .social a{
+            font-size: 24px;
+            color: inherit;
+            border: 1px solid #ffffff;
+            width: 40px;
+            height: 40px;
+            line-height: 38px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 8px;
+            opacity: 0.75;
+        }
+        .footer .social a:hover{
+           color: rgb(0, 0, 0);
+           background-color: white;
+        }
+        .footer ul{
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        .footer ul li a{
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        .footer ul li{
+            display: inline-block;   /*text inlined */
+            padding: 0 15px;
+
+        }
+        .footer ul li a:hover{
+            opacity: 1;
+        }
+        .footer .copyrights{
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px ;
+            color: #aaa;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="index.html" >Home </a>
+        <a href="#aboutpyds">About Pyds</a>
+        <a href="#form" >Contact us</a>
+        <a href="#footer" >Info</a>
+    </div>
+    
+    <!-- main -->
+    <div class="main">
+        <div class="left">
+            <h1 >Pyds Alumni</h1>
+            <h2>To Explore and Connect with Alumni </h2>
+            <h2> Click here 👇</h2>
+            <button onclick="opennav()" >&#9776; Course</button>
+        </div>
+        <div class="right">
+            <img src="l1.png" alt="logo" width="65%">
+        </div>
+    </div>
+    <div class="sidenav" id="mysidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
+        <a href="btech.html">Btech</a>
+        <a href="bca.html">BCA</a>
+        <a href="BBA.html">BBA</a>
+        <a href="bcom.html">Bcom</a>
+        <a href="bpharma.html">Bpharma</a>
+    </div>
+    <script>
+        function opennav(){
+            document.getElementById("mysidenav").style.width="250px";
+        }
+        function closenav(){
+            document.getElementById("mysidenav").style.width="0";
+        }
+    </script>
+    <hr>
+    <!-- about pyds -->
+    <div class="container" id="aboutpyds">
+        <img src="bg2.jpeg" alt="page" style="width: 100%; height: 700px; filter: blur(5px);">
+        <div class="content">
+            <h1>Pyds Learning academy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis mollitia quasi quaerat eius architecto, recusandae cum harum obcaecati. Maxime nobis perferendis corrupti nulla consectetur pariatur nostrum! Perferendis repellat impedit facilis ipsum neque, vero, aperiam autem commodi nobis laborum repellendus. Doloremque, ea. Doloribus sequi iusto quidem sunt optio. Voluptatem, dicta vero, aliquid odio distinctio rem accusantium maiores veniam doloremque molestiae dolore, dolor enim? Voluptatem repudiandae fuga perferendis illum aperiam culpa quisquam eaque praesentium sequi soluta, itaque error obcaecati totam? Atque, porro id natus ipsum culpa autem sapiente optio tempora architecto ipsa suscipit illum consequuntur odit quis blanditiis quasi aspernatur minus!</p>
+            
+
+        </div>
+    </div>
+    <!-- form -->
+    <hr>
+    
+    <h1 style="margin-top: 2%;">Contact us form</h1>
+    <div class="form" id="form" >
+        
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ff6d03d0-d54a-48e2-b25a-3e94ef18f1c4">
+            <label for="name">Full name:</label>
+            <input type="text" id="fname" name="name" placeholder="Enter your full name" >
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email address" >
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option>india</option>
+                <option>nepal</option>
+                <option>usa</option>
+                <option>others</option>
+            </select>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="write comment here...." rows="10px" cols="8px"></textarea>
+            <input type="submit" value="submit" id="btn" >
+
+        </form>
+    </div>
+   
+    <!-- footer -->
+    <section class="footer" id="footer"> 
+        <div class="social">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-snapchat"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
+        <ul class="list">
+           <li><a href="">Home</a></li> 
+           <li><a href="">Service</a></li> 
+           <li><a href="">About</a></li> 
+           <li><a href="">Terms</a></li> 
+           <li><a href="">Privacy policy</a></li> 
+           
+        </ul>
+        <p class="copyrights">
+            <marquee behavior="scroll" direction="left" scrollamount="5"> <p style="font-size: medium; margin-top: 1%;">This is professional website no &copy; rights | All right are reserved | this is a project website. </p></marquee>
+        </p>
+
+
+    </section>
+    
+</body>
+>>>>>>> 66fca9b (email feature)
 </html>
